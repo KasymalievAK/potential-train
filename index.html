@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Таттуу Маркет</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<header>
+    <img class="main-logo" src="assets/logo.png" alt="logo">
+    <h1>Таттуу Маркет</h1>
+    <button id='cart' class="cart" onclick="location.href='cart.html'">Корзина</button>
+</header>
+<div class="container">
+    <div class="hero">
+        <img src="assets/header.jpg" alt="Hero Image">
+    </div>
+    <h2>Доступные продукты</h2>
+    <div class="products">
+        <div class="product">
+            <img src="assets/finiki-adgva.jpg" alt="Финики Аджва">
+            <h3>Финики Аджва</h3>
+            <p>Цена: 6000 сом / 68$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(dates_adjva)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(dates_adjva)" class="btn" type="button">-</button>
+            </div>
+            <p id='dates-adjva-cart' class="bold">В корзине: </p>
+        </div>
+        <div class="product">
+            <img src="assets/injir.webp" alt="Инжир вяленный">
+            <h3>Инжир вяленный</h3>
+            <p>Цена: 400 сом / 4.5$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(fig)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(fig)" class="btn" type="button">-</button>
+            </div>
+            <p id="fig-cart" class="bold">В корзине: </p>
+        </div>
+        <div class="product">
+            <img src="assets/greckiy-oreh.jpg" alt="Грецкий орех">
+            <h3>Грецкий орех</h3>
+            <p>Цена: 250 сом / 2.8$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(walnuts)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(walnuts)" class="btn" type="button">-</button>
+            </div>
+            <p id="walnuts-cart" class="bold">В корзине: </p>
+        </div>
+        <div class="product">
+            <img src="assets/med.jpeg" alt="Мёд">
+            <h3>Мёд</h3>
+            <p>Цена: 500 сом / 6.7$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(honey)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(honey)" class="btn" type="button">-</button>
+            </div>
+            <p id="honey-cart" class="bold">В корзине: </p>
+        </div>
+        <div class="product">
+            <img src="assets/arahis.jpg" alt="Арахис (Жер жангак)">
+            <h3>Арахис (Жер жангак)</h3>
+            <p>Цена: 250 сом / 2.8$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(peanut)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(peanut)" class="btn" type="button">-</button>
+            </div>
+            <p id="peanut-cart" class="bold">В корзине: </p>
+        </div>
+        <div class="product">
+            <img src="assets/finiki-medjul.webp" alt="Финики Королевские 'Меджул'">
+            <h3>Финики Королевские "Меджул"</h3>
+            <p>Цена: 1500 сом / 17.15$ (кг)</p>
+            <div class="btn-row">
+                <button onclick="addToCart(dates_medjul)" class="btn" type="button">+</button>
+                <button onclick="removeFromCart(dates_medjul)" class="btn" type="button">-</button>
+            </div>
+            <p id="dates-medjul-cart" class="bold">В корзине: </p>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Свяжитесь с нами: | Телефон: </p>
+    <p><a href="assets/updated_offer_agreement.pdf" target="_blank">Договор оферты</a> | <a href="assets/updated_offer_agreement.pdf" target="_blank">Пользовательское соглашение</a></p>
+    <p>Юридическая информация: ОcОО "СтройТрейдКомпани" 01201201610154, Адрес: Кыргызская Республика, Бишкек, Первомайский район, ул.Киевская, 1</p>
+    <p>Контактные данные: aziz998899aziz@gmail.com | Телефон:+996 509 979 888</p>
+    <p>Ответственные сотрудники: Нурдинов Азиз Абдукаримович, email: aziz998899aziz@gmail.com</p>
+    <p>Регистрационный номер: 154585-3301-ООО</p>
+
+    <h3>Мы принимаем к оплате:</h3>
+    <div class="payment-methods">
+        <img class="logo" src="assets/Visa_Inc._logo.svg" alt="Visa">
+        <img class="logo" src="assets/MasterCard_.svg" alt="MasterCard">
+        <img class="logo" src="assets/Maestro_.svg" alt="Maestro">
+        <img class="logo" src="assets/MegaPay-512h-svg.svg" alt="Megapay">
+        <img class="logo" src="assets/MBank_.svg" alt="MBank">
+    </div>
+
+    <p>&copy; 2025 Грандлидер Групп. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

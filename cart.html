@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Корзина - Таттуу Маркет</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+<header>
+    <h1>Корзина</h1>
+    <button id='cart' class="cart" onclick="location.href='index.html'">Назад на главную</button>
+</header>
+<div class="cart-container" id="cart-items">
+</div>
+<div class="cart-summary" id="cart-summary">
+    <h2>Итог заказа</h2>
+    <p>Всего товаров: <span id="total-items">0</span></p>
+    <p>Сумма к оплате: <span id="total-amount">0</span> KGS</p>
+</div>
+<div class="input-container">
+    <input type="tel" id="phone-number" placeholder="+1 234 567 890" pattern="[+0-9\s\-()]*" required>
+    <label for="phone-number">Номер телефона</label>
+</div>
+<div class="cart-actions">
+    <button onclick="pay()" class="btn">Оплатить</button>
+    <button onclick="clearCart()" class="btn">Очистить корзину</button>
+</div>
+
+<div id="payment-success" class="success-bar" style="display: none;">
+    ✅ Оплата прошла успешно!
+</div>
+<div id="payment-error" class="error-bar" style="display: none;">
+    ❌ Оплата не прошла. Попробуйте еще раз.
+</div>
+<footer>
+    <p>Свяжитесь с нами: | Телефон: </p>
+    <p><a href="assets/updated_offer_agreement.pdf" target="_blank">Договор оферты</a> | <a href="assets/updated_user_agreement.pdf" target="_blank">Пользовательское соглашение</a></p>
+    <p>Юридическая информация: ОcОО "СтройТрейдКомпани" 01201201610154, почтовый адрес: Кыргызская Республика, Бишкек, Первомайский район, ул.Киевская, 1</p>
+    <p>Контактные данные: aziz998899@gmail.com | Телефон: +996 509 979 888</p>
+    <p>Ответственные сотрудники: Нурдинов Азиз Абдукаримович, email: aziz998899@gmail.com</p>
+    <p>Регистрационный номер: 313899-3301-ООО</p>
+    <p>Код ОКПО: 33714217</p>
+    <p>ИНН: 00603202510088</p>
+
+    <h3>Мы принимаем к оплате:</h3>
+    <div class="payment-methods">
+        <div class="payment-methods">
+            <img class="logo" src="assets/Visa_Inc._logo.svg" alt="Visa">
+            <img class="logo" src="assets/MasterCard_.svg" alt="MasterCard">
+            <img class="logo" src="assets/Maestro_.svg" alt="Maestro">
+            <img class="logo" src="assets/MegaPay-512h-svg.svg" alt="Megapay">
+            <img class="logo" src="assets/MBank_.svg" alt="MBank">
+        </div>
+    </div>
+
+    <p>&copy; 2025 Грандлидер Групп. Все права защищены.</p>
+</footer>
+</body>
+</html>
